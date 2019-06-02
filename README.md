@@ -8,3 +8,4 @@ Preliminary GUI setup for tracking the motion of operating handles so as to gene
 5. Generating an on-screen alert in case of an anomaly if they move past a certain pixel distance. 
 6. Providing the status of the tracking for each individual color.
 
+![image](https://user-images.githubusercontent.com/50490953/58757159-14994400-84d5-11e9-8214-bcf5ebdb7aa8.png)
