@@ -1,6 +1,6 @@
 # Color-based-target-tracking-GUI
 
-Preliminary GUI setup for tracking the motion of operating handles so as to generate an alert in case of an anomaly. The features of the GUI include:
+Preliminary GUI setup for tracking the motion of operating handles so as to generate an alert in case of an anomaly. As for testing purpose, two different colored markers were attached to the operating levers to track the motion of the same in the image plane. The features of the GUI include:
 1. Initial position calibration of both the lever at its extreme end.
 2. Recording the video
 3. Recording the pixel coordinate data of the tarcking
