@@ -9,3 +9,8 @@ Preliminary GUI setup for tracking the motion of operating handles so as to gene
 6. Providing the status of the tracking for each individual color.
 
 ![image](https://user-images.githubusercontent.com/50490953/58757159-14994400-84d5-11e9-8214-bcf5ebdb7aa8.png)
+
+# Updated GUI (In this repository)
+
+![image](https://user-images.githubusercontent.com/50490953/59398160-2f817900-8d5d-11e9-9cbd-adb3c440b609.png)
+
