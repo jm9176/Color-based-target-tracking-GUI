@@ -301,7 +301,6 @@ void MainWindow::on_Calibration_clicked()
 void MainWindow::on_Record_clicked()
 {
     if(qtimer->isActive() == true && statusRec == true) {
-
         ui->Record->setStyleSheet("color: white; background: red");
         ui->Record->setText("RECORDING");
         statusRec = false;
@@ -310,9 +309,7 @@ void MainWindow::on_Record_clicked()
         data1 += to_string(fileCount)+".csv";
         file = fopen(data1.c_str(),"w") ;
         fileCount++;
-
     } else {
-
         ui->Record->setStyleSheet("color: black");
         ui->Record->setText("REC DATA");
         statusRec = true;
@@ -327,17 +324,13 @@ void MainWindow::on_RVideo_clicked()
     if(statusRVideo == true)
     {
         statusRVideo = false;
-
-        // Storing the camera output of the unprocessed image frame
         string data2 = "C:/Users/shubh/Desktop/UI/Videos/vid";
         data2 += to_string(vidCount) + ".avi";
         video.open(data2, CV_FOURCC('P','I','M','1'), 30, Size(640,480), true);
         ui->RVideo->setStyleSheet("color: white; background: red");
         ui->RVideo->setText("RECORDING");
         vidCount++;
-
     } else {
-
         statusRVideo = true;
         video.release();
         ui->RVideo->setStyleSheet("color: black");
