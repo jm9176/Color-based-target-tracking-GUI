@@ -43,35 +43,27 @@ void MainWindow::morph_ft(Mat &thresh, int num_iter){
     for (int i = 0; i < num_iter; i++){
         dilate(thresh, thresh, dilate_st_elem);
     }
-
 }
 
 void MainWindow::track_targets(float &x, float &y, Mat &thresh, bool &status){
 
-    // Defining the min area value for the tracking.
-    // If yes, then target is found, else, it is considered
-    // as noise.
-    int min_objArea = 400;
-
-    // Calculating Image moments to get the centroid
-    // and the area of the white pixelated region in
+    // Defining the min area value for the tracking. Calculating Image moments 
+    // to get the centroid and the area of the white pixelated region in
     // the threshold image
+    int min_objArea = 400;
     Moments moment1 = moments(thresh);
     double area1 = moment1.m00;
     status = false;
 
     if (area1>min_objArea){
-
         x = (moment1.m10 / area1);
         y = (moment1.m01 / area1);
         status = true;
-
+    
     } else {
-
         x = 0;
         y = 0;
         status = false;
-
     }
 }
 
