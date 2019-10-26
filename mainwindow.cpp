@@ -182,7 +182,6 @@ QImage MainWindow::matToQImage(Mat mat) {
     } else {
         qDebug() << "Image Error";
     }
-
     return QImage();
 }
 
