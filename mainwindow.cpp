@@ -5,7 +5,6 @@ using namespace std;
 using namespace cv;
 
 MainWindow::MainWindow(QWidget *parent):QMainWindow(parent), ui(new Ui::MainWindow){
-
     // Initialization parameters for the camera, camera output, and timer
     ui->setupUi(this);
     capWebcam.open(0);
@@ -15,7 +14,6 @@ MainWindow::MainWindow(QWidget *parent):QMainWindow(parent), ui(new Ui::MainWind
     connect(qtimer, SIGNAL(timeout()), this, SLOT(processFrameAndUpdateGUI()));
     qtimer->start(20);
     VideoWriter video;
-
 }
 
 MainWindow::~MainWindow(){
