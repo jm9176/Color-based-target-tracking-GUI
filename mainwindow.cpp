@@ -176,7 +176,6 @@ QImage MainWindow::matToQImage(Mat mat) {
         return QImage((uchar*)mat.data, mat.cols, mat.rows, mat.step, QImage::Format_Indexed8);
 
     } else if(mat.channels() == 3) {
-
         cvtColor(mat, mat, CV_BGR2RGB);
         return QImage((uchar*)mat.data, mat.cols, mat.rows, mat.step, QImage::Format_RGB888);
 
